@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  background-color: white;
+}
+
+/* mobile */
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 45% !important;
+  }
+
+  .product__wrapper,
+  .posts {
+    width: 100%;
+  }
+
+  .product__item,
+  .post{
+    min-width: 250px;
+    flex: 0 0 90%;
+  }
+
+}
+
+/* tablet*/
+@media screen and (min-width: 500.1px) {
+  html {
+    font-size: 50% !important;
+  }
+
+  .product__wrapper,
+  .posts {
+    width: 100%;
+  }
+  
+  .product__item,
+  .post{
+    min-width: 350px;
+    flex: 0 0 30%;
+  }
+}
+
+/* desktop*/
+@media screen and (min-width: 769px) {
+  html {
+    font-size: 62.5% !important;
+  }
+
+  .product__wrapper,
+  .posts {
+    width: 80%;
+  }
+
+  .product__item,
+  .post{
+    min-width: 250px;
+    flex: 0 0 20%;
+  }
+}
+

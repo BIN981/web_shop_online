@@ -1,0 +1,88 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 29, 2022, 11:05:30 AM
+    Author     : ADMIN
+*/
+
+#footer{
+    width: 100%;
+    min-height: 300px;
+    background-color: #dadada;
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    letter-spacing: .5px;
+    position: absolute;
+}
+
+#footer a {
+    color: black;
+}
+
+.footer__info{
+    width: 30%;
+}
+
+.title{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.info-item{
+    font-size: 1.2rem;
+}
+
+.info-item > i{
+    margin-right: 1rem;
+
+}
+
+.info-item + .info-item{
+    margin-top: .8rem;
+}
+
+.footer__link{
+    width: 15%;
+    padding-top: 5rem;
+    font-size: 1.5rem;
+}
+
+.footer__link > div + div{
+    margin-top: 1rem;
+}
+
+.footer__link > div{
+    transition: all .2s linear;
+}
+
+.footer__contact{
+    width: 15%;
+    font-size: 1.5rem;
+}
+
+.contact-title{
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+}
+
+.footer__contact > span{
+    font-size: 2.5rem;
+}
+
+.footer__contact > span + span{
+    margin-left: 1rem;
+}
+
+.footer__contact span a i{
+    transition: all .2s linear;
+}
+
+.footer__contact span a i:hover{
+    transform: scale(1.2);
+    color: #1a6a83;
+}
+

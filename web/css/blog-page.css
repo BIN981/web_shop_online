@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    background-color: white;
+}
+
+.posts {
+    width: 90%;
+    margin: 15rem auto;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #dadada;
+    position: relative;
+    padding: 50px 0;
+}
+
+.post__sider{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    padding: 3rem 2rem;
+}
+
+.post__search{
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    max-width: 400px;
+}
+
+.post__search input{
+    width: 88%;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border-radius: inherit;
+    letter-spacing: .7px;
+}
+
+.post__search button{
+    position: absolute;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 10%;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.post__category{
+    list-style: none;
+    margin-top: 30px;
+}
+
+.post__category-item{
+    margin: 10px 0;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 1rem;
+    transition: all .2s linear;
+}
+
+.post__category-item:hover{
+    background-color: #adadad;
+}
+
+.post__category-item.active{
+    background-color: #adadad;
+}
+
+.post__list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.posts > span {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    z-index: 4s;
+    font-size: 3rem;
+    background-color: white;
+    color: #666;
+    padding: 1rem 2rem;
+}
+
+.post {
+    width: 100%;
+    max-width: 90%;
+    padding: 1rem;
+    margin: 20px 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.post > img {
+    height: 250px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.post__title {
+    margin-top: 10px;
+    font-size: 3rem;
+}
+
+.post__title:hover {
+    color: rgb(6, 136, 103);
+}
+
+.post__date {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+.post__description {
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50px);
+}
+.page{
+    margin: 0 1rem;
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(10, 113, 182);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: rgb(10, 113, 182);
+    transition: all .2s linear;
+}
+
+.page.active{
+    background-color: rgb(10, 113, 182);
+    color: white;
+}

@@ -1,0 +1,147 @@
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.cart {
+  background-color: #fff;
+  min-width: 80rem;
+  margin: 18rem auto;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.cart__title{
+  margin-bottom: 50px;
+  font-size: 4rem;
+}
+
+.cart__item{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.cart__item + .cart__item{
+  margin-top: 20px;
+}
+
+.item__remove{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: #adadad;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.item__remove:hover {
+  transform: scale(1.1);
+}
+
+.item__image{
+  width: 15rem;
+  height: 15rem;
+  object-fit: contain;
+  object-position: center;
+}
+
+.item__detail{
+  flex: 1;
+  padding: 0 2rem;
+}
+
+.item__name{
+  font-size: 2.5rem;
+}
+
+.item__price{
+  font-size: 2rem;
+}
+
+.item__quantity-action{
+  width: 4rem;
+  height: 4rem;
+  background: rgb(165, 236, 232);
+  border: 1px solid rgb(7, 153, 121);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.item__quantity-action:hover{
+  transform: scale(1.1);
+}
+
+.quantity{
+  height: 4rem;
+  width: 5rem;
+  text-align: center;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  margin: 0 1rem;
+}
+
+.item__select{
+  padding: 0 2rem;
+}
+
+#select{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.cart__buy{
+  background-color: rgb(34, 192, 153);
+  max-width: 15rem;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: .5px;
+  border-radius: 5px;
+  margin-top: 40px;
+  cursor: pointer;
+  transition: all .2s linear;
+  padding: 1rem 0;
+}
+
+.cart__buy:hover{
+  transform: scale(1.1);
+  background-color: rgb(26, 150, 119);
+}
+
+
+
+
+/* mobile */
+@media screen and (max-width: 769px) {
+
+  .cart{
+    min-width: 100%;
+    padding: 2rem;
+    top: 10rem;
+    box-shadow: none;
+  }
+
+  
+}

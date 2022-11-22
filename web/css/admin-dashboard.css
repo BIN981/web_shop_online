@@ -1,0 +1,109 @@
+.wrapper {
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-auto-rows: 2;
+   margin: 8rem 0 15rem 0; 
+}
+
+.title {
+  /* border: 1px solid #666; */
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.navigation {
+  /* border: 1px solid #666; */
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+.nav-item {
+  padding: 2rem;
+   cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.nav-item + .nav-item {
+  border-top: 1px solid #666;
+}
+
+.nav-item.active {
+  background-color: #dadada;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  background-color: #dadada;
+}
+
+.nav-item i {
+  margin-right: 1rem;
+}
+
+.detail {
+  min-height: 70rem;
+  /* border: 1px solid #666; */
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  border-left: 1px solid #666;
+}
+
+.filter {
+  /* border: 1px solid #666; */
+  padding: 1rem 3rem;
+}
+
+.detail h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.filter .input + .input {
+  margin-top: 1rem;
+}
+
+.filter .input span {
+  display: inline-block;
+  font-size: 1.5rem;
+  min-width: 10rem;
+}
+
+.input input,
+.input select {
+  padding: 0.5rem 1rem;
+  min-width: 15rem;
+}
+
+.submit{
+    margin-left: 2rem;
+    transition: all .2s linear;
+    color: white;
+    background-color: rgb(43, 137, 224);
+    padding: 1rem 0;
+    border-radius: 5px;
+    text-align: center;
+    opacity: .8;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.submit:hover{
+    opacity: 1;
+}
+
+.result {
+  padding: 1rem 3rem;
+}
+
+.chart {
+  /*border: 1px solid #666;*/
+  min-height: 50rem;
+  margin-top: 2rem;
+}

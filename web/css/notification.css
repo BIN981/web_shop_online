@@ -1,0 +1,112 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 30, 2022, 9:45:56 PM
+    Author     : ChauDM
+*/
+
+#notification-box{
+    position: fixed;
+    z-index: 10;
+    top: 13rem;
+    right: 3rem;
+}
+
+.notification{
+    min-width: 25rem;
+    position: relative;
+    border-left: 5px solid black;
+    box-shadow: 0 0 5px;
+    border-radius: 3px;
+    padding: 1rem;
+    background-color: white;
+
+    animation: rightToLeft .6s linear forwards;
+    /* transform: translateX(150%); */
+/* 
+    animation: disappear 1s linear forwards; */
+}
+
+@keyframes rightToLeft {
+    0% {
+		transform: translateX(100%);
+	}
+	40% {
+		transform: translateX(-10%);
+	}
+	80% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-10px);
+	}
+}
+
+@keyframes disappear {
+    0% {
+		transform: translateX(-10px);
+	}
+	40% {
+		transform: translateX(0%);
+	}
+	80% {
+		transform: translateX(-10%);
+	}
+	100% {
+		transform: translateX(120%);
+	}
+}
+
+.notification.success{
+    border-color: rgb(18, 173, 18);
+}
+
+.notification.success > .notification__title{
+    color: rgb(18, 173, 18);
+}
+
+.notification.warning{
+    border-color: rgb(228, 231, 37);
+}
+
+.notification.warning > .notification__title{
+    color: rgb(228, 231, 37);
+}
+
+.notification.error{
+    border-color: red;
+}
+
+.notification.error > .notification__title{
+    color: red;
+}
+
+.notification + .notification{
+    margin-top: 1rem;
+}
+
+.close{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    transition: all .2s linear;
+}
+
+.close:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.notification__title{
+    font-size: 1.8rem;
+}
+
+.notification__detail{
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+}
+

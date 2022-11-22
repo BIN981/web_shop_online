@@ -1,0 +1,65 @@
+.invoice{
+  width: 50%;
+  min-width: 50rem;
+  padding: 3rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+  border-radius: 5px;
+  display: block;
+  margin: 13rem auto;
+}
+
+.invoice .title{
+  font-size: 3.5rem;
+}
+
+.invoice .message{
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 2rem 0;
+}
+
+.invoice .user-info{
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+.status,
+.product-price span{
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.invoice .products{
+  margin: 2rem 0;
+}
+
+.products .product{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  font-size: 1.4rem;
+}
+
+.product-detail{
+  padding: 1rem 2rem;
+}
+
+.product-image img{
+  width: 12rem;
+  height: 12rem;
+  object-fit: fill;
+  object-position: center;
+}
+
+.product-quantity{
+  text-align: center;
+  flex: 1;
+  font-weight: 500;
+}
+
+
+.total-cost{
+  text-align: right;
+  font-size: 1.7rem;
+}

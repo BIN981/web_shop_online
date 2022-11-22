@@ -1,0 +1,430 @@
+.wrapper {
+    width: 100%;
+    display: block;
+    margin: 15rem auto;
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+}
+
+.title {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+}
+
+.header {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.user__list {
+    margin-top: 5rem;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+.user__item td {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    max-width: 35rem;
+    
+}
+
+.user-fullname,
+.user-role {
+    font-size: 1.8rem !important;
+}
+
+.user-avatar {
+    width: 15%;
+    text-align: center;
+}
+
+.user-avatar img {
+    object-fit: contain;
+    object-position: center;
+    width: 10rem;
+    height: 10rem;
+}
+
+.user-action {
+    width: 20%;
+}
+
+.user-action span {
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    font-size: 1.7rem;
+    transition: all 0.2s linear;
+    opacity: 0.8;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.user-action span i{
+    margin-right: 1rem;
+}
+
+.user-action span:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.action{
+    width: 25%;
+}
+
+.post-title,
+.post-description,
+.post-author,
+.post-publish{
+    font-size: 1.2rem !important;
+}
+
+
+
+.btn-edit {
+    background-color: rgb(224, 212, 102);
+}
+
+.btn-preview {
+    background-color: rgb(53, 209, 123);
+    color: white;
+}
+
+.btn-show{
+    background-color: rgb(33, 138, 199);
+}
+
+.btn-hide{
+    background-color: #dadada;
+}
+
+.btn-add{
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    background-color: rgb(28, 106, 170);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: .8;
+    transition: all .2s linear;
+}
+
+.btn-add:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.hide{
+    display: none !important;
+}
+.pagination {
+    width: 100%;
+    text-align: center;
+    margin: 4rem 0;
+}
+.page{
+    margin: 0 1rem;
+    display: inline-flex;
+    width: 3rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(10, 113, 182);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: rgb(10, 113, 182);
+    transition: all .2s linear;
+}
+
+.page.active{
+    background-color: rgb(10, 113, 182);
+    color: white;
+}
+
+/* mobile */
+@media screen and (max-width: 500px) {
+    .wrapper {
+        box-shadow: none;
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .user-action span {
+        padding: 0.8rem 1rem;
+    }
+
+    .user-action span + span {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
+
+/* tablet*/
+@media screen and (min-width: 500.1px) {
+    .user-action span {
+        padding: 0.8rem 1rem;
+    }
+
+    .user-action span + span {
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
+
+
+
+/* desktop*/
+@media screen and (min-width: 769px) {
+    .user-action span + span {
+        margin-left: 1.5rem;
+    }
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    z-index: 11;
+}
+
+.edit-modal{
+    width: 50%;
+    height: 84rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+    position: relative;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+}
+
+.edit-modal .fa-xmark{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+.edit-modal .fa-xmark:hover{
+    transform: scale(1.1);
+}
+
+.edit-modal img{
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 20rem;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 5px;
+}
+
+.edit-modal span{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.edit-modal input,
+.edit-modal textarea{
+    padding: .5rem 1rem;
+    width: 100%;
+}
+
+.edit-modal button{
+    margin-top: 1rem;
+    background-color: rgb(62, 132, 224);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 100px;
+    padding: 1rem 2rem;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+.edit-modal button:hover{
+    transform: scale(1.1);
+    background-color: rgb(49, 113, 197);
+}
+
+.post__view{
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 150px;
+    position: relative;
+}
+
+.close-icon{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    color: #666;
+    transition: all .2s linear;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.close-icon:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+.post__view-publish{
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    font-style: italic;
+}
+
+.post__view-author{
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    font-style: italic;
+}
+
+.post__view img{
+    width: 50rem;
+    height: 50rem;
+    float: left;
+    padding: 0 1rem;
+}
+
+.post__view-title{
+    font-size: 2.2rem;
+    margin: 15px 0;
+}
+
+.post__view-description{
+    font-size: 1.8rem;
+    padding: 0 1rem;
+}
+
+
+/*manage products*/
+.product-size-list td{
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.product-size-list th{
+  padding: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.product-size-list{
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.stock-quantity {
+  position: relative;
+}
+
+.stock-quantity > i{
+  position: absolute;
+  color: white;
+}
+
+.stock-quantity i:hover{
+  color: black !important;
+}
+
+.stock-quantity:hover > i{
+  color: #adadad ;
+}
+
+.btn-save-size{
+    display: inline-block;
+    background-color: green !important;
+}
+
+.btn-add-size,
+.btn-save-size{
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(62, 132, 224);
+  width: fit-content;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: all .2s linear;
+  display: inline-block;
+  font-size: 12.5px !important;
+}
+
+.btn-add-size:hover,
+.btn-save-size:hover{
+  transform: scale(1.1);
+  background-color: rgb(49, 113, 197);
+}
+
+.modal-action{
+  width: 100%;
+}
+
+.btn-preview.sale{
+  background-color: rgb(216, 58, 37);
+}
+
+.filter{
+  
+  margin: 30px 10rem;
+}
+
+.filter span{
+  /* border: 1px solid black; */
+  font-size: 1.3rem;
+  text-align: left;
+  min-width: 150px;
+  display: inline-block;
+}
+
+.filter div + div{
+  margin-top: 1rem;
+}
+
+.filter input,
+.filter select{
+  width: 15rem;
+  padding: .5rem 1rem;
+  font-size: 1.3rem;
+}
+
+.filter button{
+  padding: .5rem 1rem;
+  border: navajowhite;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: all .2s linear;
+}
+
+.filter button:hover{
+  transform: scale(1.1);
+  background-color: #adadad;
+}

@@ -1,0 +1,135 @@
+.wrapper {
+  width: 80%;
+  display: block;
+  margin: 200px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  padding: 2rem 3rem;
+  border-radius: 10px;
+}
+
+.wrapper-title {
+  font-size: 4rem;
+}
+
+.order__list {
+  width: 100%;
+  list-style: none;
+  margin-top: 3rem;
+  border-collapse: separate;
+  border-spacing: 0 30px;
+}
+
+.header {
+  font-size: 2rem;
+  line-height: 50px;
+}
+
+.order__item {
+  line-height: 2rem;
+  background-color: white;
+}
+
+.order__item td {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.order-id {
+  width: 10%;
+}
+
+.order-status span {
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-weight: 500;
+}
+
+.submitted {
+  background-color: rgb(151, 151, 151);
+  color: #fff;
+}
+
+.confirmed {
+  background-color: rgb(237, 240, 80);
+  color: red;
+}
+
+.completed {
+  background-color: rgb(54, 194, 41);
+  color: white;
+}
+
+.canceled {
+  background-color: #dadada;
+  color: black;
+}
+
+.order__item:hover {
+  cursor: pointer;
+  background-color: #dadada;
+}
+
+.filter{
+  
+  margin: 30px 0;
+}
+
+.filter span{
+  /* border: 1px solid black; */
+  font-size: 1.3rem;
+  text-align: left;
+  min-width: 150px;
+  display: inline-block;
+}
+
+.filter div + div{
+  margin-top: 1rem;
+}
+
+.filter input,
+.filter select{
+  width: 15rem;
+  padding: .5rem 1rem;
+  font-size: 1.3rem;
+}
+
+.filter button{
+  padding: .5rem 1rem;
+  border: navajowhite;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 1rem;
+  transition: all .2s linear;
+}
+
+.filter button:hover{
+  transform: scale(1.1);
+  background-color: #adadad;
+}
+
+
+.pagination {
+  width: 100%;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.page {
+  margin: 0 1rem;
+  /* padding: 1rem; */
+  display: inline-flex;
+  width: 3rem;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(10, 113, 182);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: rgb(10, 113, 182);
+  transition: all 0.2s linear;
+}
+
+.page.active {
+  background-color: rgb(10, 113, 182);
+  color: white;
+}

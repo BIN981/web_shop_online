@@ -1,0 +1,55 @@
+.posts {
+  width: 90%;
+  margin: 10rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #dadada;
+  position: relative;
+  padding: 40px 0;
+}
+
+.posts > span {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  z-index: 4;
+  font-size: 2.5rem;
+  background-color: white;
+  color: #666;
+  padding: 1rem 2rem;
+}
+
+.post {
+  max-width: 25rem;
+  padding: 1rem;
+  margin: 20px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.post > img {
+  height: 250px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.post__title {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.post__title:hover {
+  color: rgb(6, 136, 103);
+}
+
+.post__date {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.post__description {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
